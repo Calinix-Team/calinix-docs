@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Arghya Sarkar, Founder and Lead of Calinix Project">
+  
+  <link rel="shortcut icon" href="../../assets/720x720_white.png">
+  
+  <title>Getting Started - CalinixOS User Guide</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Getting Started";
+    var mkdocs_page_input_path = "starters-guide/getting-started.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> CalinixOS User Guide</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Home</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to CalinixOS User Guide</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../introduction/">Introduction</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Starting With CalinixOS</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Getting Started</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#downloading-calinixos">Downloading CalinixOS</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#latest-stable-iso">Latest Stable ISO</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#latest-development-iso">Latest Development ISO</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#torrents">Torrents</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#writing-a-disc-image">Writing a Disc Image</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#burning-to-a-cddvd-in-linux">Burning to a CD/DVD in Linux</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#burning-using-windows-disc-image-burner">Burning using Windows Disc Image Burner</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#writing-to-a-usb-flash-drive-in-linux">Writing to a USB flash drive in Linux</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#using-the-cli">Using the CLI</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#writing-to-a-usb-flash-drive-in-microsoft-windows">Writing to a USB flash drive in Microsoft Windows</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#rufus">Rufus</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#etcher">Etcher</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation Guide</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Interface</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../interface/dock/">The Dock</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../interface/control-center/">The Control Center</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">CalinixOS User Guide</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Starting With CalinixOS &raquo;</li>
+        
+      
+    
+    <li>Getting Started</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Calinix-Team/Calinix-Arch/edit/master/docs/starters-guide/getting-started.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="getting-started">Getting Started</h1>
+<h2 id="downloading-calinixos">Downloading CalinixOS</h2>
+<p>Every release of CalinixOS is available for download, whether the
+current stable release or upcoming preview releases. When you visit
+the download page you will find a link to each of the four main
+editions , as well as a checksum file for each. A checksum can be
+used to check the integrity of the disc image file you download to
+make sure it hasn’t been corrupted during the download. </p>
+<h4 id="latest-stable-iso">Latest Stable ISO</h4>
+<p>Navigate to the <a href="https://calinix-team.github.io/download.html">Download Page</a> of all editions of Calinix. Download the latest stable ISO from the website.</p>
+<h4 id="latest-development-iso">Latest Development ISO</h4>
+<p>We use Github Actions and Artifacts to automate our disc image (ISO) building process. Hence all our latest development ISOs are in our <a href="https://github.com/Calinix-Team/Calinix-Arch/actions">Actions Page</a>. Choose the latest action and in the main page of the specific action, you will find a section called <code>Artifacts</code> which stores our ISOs. Simply click the Artifact named <code>Calinix &lt;Release Tag&gt; DevISO</code> and a <code>.zip</code> archive will start downloading. Extract the archive. The ISO will be present inside the folder</p>
+<h4 id="torrents">Torrents</h4>
+<p>Our stable releases are hosted as torrents by <a href="https://fosstorrents.com/">FossTorrents</a>. It can be directly downloaded. If you use torrents, you know how to. </p>
+<p><a href="https://fosstorrents.com/distributions/calinix-os/">Download CalinixOS Torrents</a></p>
+<p><img alt="" src="../../assets/office.png" />
+CalinixOS Alpha 6-4 </p>
+<h2 id="writing-a-disc-image">Writing a Disc Image</h2>
+<p>A disc image is not a copy-and-paste duplication of files: it’s a bit-for-bit copy of the raw data that makes up the files and folders of
+that disc. This is why just copying a disc image file to a disc (or USB
+flash drive) to begin installing won’t work: you’ll need to use a disc
+burning or image writing application to translate that raw data into
+the files and folders. </p>
+<p>Once converted, the files can be used to run CalinixOS in LiveCD mode without having to install it to your system, and/or install
+CalinixOS on your system. It’s important to note CalinixOS will not have
+full functionality when run in Live-CD mode. For example, you will
+not be able to save any changes to the system.
+Due to the amount of software included on the full edition disc
+images you may need to use a DVD instead of a CD.</p>
+<p>Many people routinely use a DVD rather than a CD even for the
+smallest disc image files. Not only is a DVD faster to burn but they
+allow higher data access rates so the Live-CD loads faster and the
+installation completes sooner.</p>
+<h4 id="burning-to-a-cddvd-in-linux">Burning to a CD/DVD in Linux</h4>
+<p>If not already installed, several different software burning applications should be available for installation from your distribution’s Software Center / Software Manager / Package Manager / repositories. Popular burners include XFBurn, K3b, and Brasero. Which one you choose is entirely down to personal choice, though your
+operating system will usually install one suitable for your desktop environment. To simplify things a little, the following steps for burning your downloaded CalinixOS disc image use <a href="https://wiki.gnome.org/Apps/Brasero">Brasero</a>.</p>
+<p>Burning using Brasero
+- Insert a blank CD/DVD.
+- Start the <strong>Brasero</strong> software burner.
+- Click the <strong>Burn Image - Burn an existing CD/DVD image to disc</strong>
+button to open the <strong>Image Burning Setup</strong> window.
+- Click the button beneath the title <strong>Select a disc image to write</strong> to
+open up your file manager. Locate and double-click the downloaded disc image file to load it. Upon automatically returning to
+the <strong>Image Burning Setup</strong> window, note that the disc image file is
+now listed as the disc image to write.
+- The blank CD/DVD you inserted should be automatically listed underneath the title <strong>Select a disc to write</strong> to. If not, click the
+button to select it manually.
+- Click the <strong>properties</strong> button to open the properties window, and
+then click the button beneath the title <strong>Burning Speed</strong>. We strongly
+recommend you select the slowest speed available. Once selected,
+click the <strong>Close</strong> button. We strongly recommend you select the
+slowest speed available when burning
+to disc in order minimise the possibility
+of corruption during the burning
+process.
+- Click the <strong>Burn</strong> button to start the burning process. If necessary,
+follow any on-screen instructions provided.</p>
+<h4 id="burning-using-windows-disc-image-burner">Burning using Windows Disc Image Burner</h4>
+<p>Right-clicking on the disc image file and selecting <strong>Burn disc image</strong>
+will start the <strong>Windows Disc Image Burner</strong> program. This makes the
+process of burning to a disc very straightforward:</p>
+<ul>
+<li>Insert a blank CD/DVD into your disc drive.</li>
+<li>Start <strong>Windows Disc Image Burner</strong>.</li>
+<li>Select your CD/DVD drive in the <strong>Disc burner</strong> menu.</li>
+<li>Click <strong>Burn</strong>.</li>
+</ul>
+<h4 id="writing-to-a-usb-flash-drive-in-linux">Writing to a USB flash drive in Linux</h4>
+<p>To take advantage of the faster access times and much quieter nature
+of a USB flash drive, there are a number of methods of writing the
+disc image file. One of the easiest is to use <a href="https://software.opensuse.org/package/imagewriter">SUSE Studio Imagewriter</a>.</p>
+<p>SUSE Studio Imagewriter should be available for installation from
+your distribution’s Software Center / Software Manager / Package Manager / repositories. Once SUSE Studio Imagewriter has
+been downloaded and installed, ensure that your USB flash drive
+is plugged in before starting the application.
+The process of using <strong>SUSE Studio Imagewriter</strong> is very straightforward:</p>
+<ul>
+<li>Click on the centre icon.</li>
+<li>Navigate to where you downloaded the disc image file, and select
+it.</li>
+<li>Ensure that your USB flash drive has been selected from the dropdown menu.</li>
+<li>Click on the <strong>Write</strong> button.</li>
+<li>Once it has finished, reboot your system, making sure to select the
+USB flash drive as the boot device in the BIOS menu (or its UEFI
+equivalent).</li>
+</ul>
+<h4 id="using-the-cli">Using the CLI</h4>
+<p>If you don’t want to install extra software, and you are comfortable
+using the command line, there’s an even easier way of writing a disc
+image to a USB device.</p>
+<ul>
+<li>Connect the USB flash drive to your PC, open a terminal and <code>cd</code> to
+where you downloaded the disc image.</li>
+<li>Check the device identifier with: <code>sudo fdisk -l</code>.</li>
+<li>Write the image with:</li>
+</ul>
+<pre><code class="language-bash">sudo dd if=path/to/{ISO File} of=/dev/(Device identifier from above) bs=4M
+</code></pre>
+<p>My USB drive is at <code>/dev/sdb</code> and ISO is at <code>~/Downloads/Calinix-Arch-21.11.21-x86_64.iso</code></p>
+<p>So I would use:</p>
+<pre><code class="language-bash">sudo dd if=~/Downloads/Calinix-Arch-21.11.21-x86_64.iso of=/dev/sdb bs=4M
+</code></pre>
+<ul>
+<li>Once completed reboot your system and boot from the USB drive
+by selecting it as the boot device in the BIOS menu (or its UEFI
+equivalent).</li>
+</ul>
+<h4 id="writing-to-a-usb-flash-drive-in-microsoft-windows">Writing to a USB flash drive in Microsoft Windows</h4>
+<h5 id="rufus">Rufus</h5>
+<p>For Windows users using USB media, Rufus
+is highly recommended.</p>
+<ul>
+<li>Select the USB key to be used in the Device menu. Then, on the
+line beginning with Boot selection, click on Select to select your downloaded disc image, and then Start. After doing so, select DD Image
+in the window that appears.
+Rufus with recommended settings</li>
+</ul>
+<p><img alt="" src="https://cdn.neow.in/news/images/uploaded/2020/06/1592507225_rufus.jpg" /></p>
+<h5 id="etcher">Etcher</h5>
+<p>Another recommended piece of software is Etcher. It is incredibly simple to use. All you have to do is select the disc image, the USB
+drive, and start flashing the image!</p>
+<p><img alt="" src="https://assets.balena.io/blog-common/archive/2020/07/etcher-1.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../installation/" class="btn btn-neutral float-right" title="Installation Guide">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../introduction/" class="btn btn-neutral" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright © The Calinix Project 2021</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Calinix-Team/Calinix-Arch/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../../introduction/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../installation/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+site_name: CalinixOS User Guide
+repo_url: https://github.com/Calinix-Team/Calinix-Arch/
+site_description: "A detailed user guide to a CalinixOS user, which takes you through the walls and cores of the OS as a user"
+site_author: "Arghya Sarkar, Founder and Lead of Calinix Project"
+copyright: "Copyright © The Calinix Project 2021"
+lang:
+  - en
+  - ar
+
+nav:
+    - Home:
+      - 'index.md'
+      - 'introduction.md'
+
+    - Starting With CalinixOS:
+      - 'starters-guide/getting-started.md'
+      - 'starters-guide/installation.md'
+
+
+    - Interface: 
+      - "interface/dock.md"
+      - "interface/control-center.md"
+
+remote_name: origin
+theme: readthedocs
+markdown_extensions:
+  - admonition
+site_favicon: assets/720x720_white.png
