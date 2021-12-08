@@ -18,6 +18,8 @@ nav:
 
 
     - Interface: 
+      - "interface/the-awesomewm.md"
+      - "interface/wm-vs-de.md"
       - "interface/dock.md"
       - "interface/control-center.md"
 
