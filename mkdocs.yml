@@ -1,11 +1,10 @@
 site_name: CalinixOS User Guide
-repo_url: https://github.com/Calinix-Team/Calinix-Arch/
+repo_url: https://github.com/Calinix-Team/calinix-docs
+repo_name: Calinix-Team/calinix-docs
 site_description: "A detailed user guide to a CalinixOS user, which takes you through the walls and cores of the OS as a user"
 site_author: "Arghya Sarkar, Founder and Lead of Calinix Project"
 copyright: "Copyright © The Calinix Project 2021"
-lang:
-  - en
-  - ar
+
 
 nav:
     - Home:
@@ -24,7 +23,35 @@ nav:
       - "interface/control-center.md"
 
 remote_name: origin
-theme: readthedocs
+
+extra:
+  homepage: https://wiki.calinix.tech
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+
+
+theme:
+  name: material
+  features:
+    - search.suggest
+    - search.highlight
+  language: en
+  logo: assets/720x720_white.png
+  favicon: assets/720x720_white.png
+  palette:
+    - scheme: default
+      primary: black
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate 
+      primary: black
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+
 markdown_extensions:
   - admonition
-site_favicon: assets/720x720_white.png
