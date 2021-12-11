@@ -12,19 +12,19 @@
         <meta name="author" content="Arghya Sarkar, Founder and Lead of Calinix Project">
       
       
-      <link rel="icon" href="/assets/720x720_white.png">
+      <link rel="icon" href="../../assets/720x720_white.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.0.2">
     
     
       
-        <title>CalinixOS User Guide</title>
+        <title>Virtual Machines - CalinixOS User Guide</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.816931ca.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.816931ca.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.9204c3b2.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.9204c3b2.min.css">
         
       
     
@@ -38,7 +38,7 @@
       
     
     
-    <script>function __md_scope(e,t,_){return new URL(_||(t===localStorage?"/":"/"),location).pathname+"."+e}function __md_get(e,t=localStorage,_){return JSON.parse(t.getItem(__md_scope(e,t,_)))}function __md_set(e,t,_=localStorage,o){try{_.setItem(__md_scope(e,_,o),JSON.stringify(t))}catch(e){}}</script>
+    <script>function __md_scope(e,t,_){return new URL(_||(t===localStorage?"../..":"../.."),location).pathname+"."+e}function __md_get(e,t=localStorage,_){return JSON.parse(t.getItem(__md_scope(e,t,_)))}function __md_set(e,t,_=localStorage,o){try{_.setItem(__md_scope(e,_,o),JSON.stringify(t))}catch(e){}}</script>
     
       
 
@@ -66,6 +66,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#virtual-machines" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -78,7 +83,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://wiki.calinix.tech" title="CalinixOS User Guide" class="md-header__button md-logo" aria-label="CalinixOS User Guide" data-md-component="logo">
       
-  <img src="/assets/720x720_white.png" alt="logo">
+  <img src="../../assets/720x720_white.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -94,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Virtual Machines
             
           </span>
         </div>
@@ -199,7 +204,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://wiki.calinix.tech" title="CalinixOS User Guide" class="md-nav__button md-logo" aria-label="CalinixOS User Guide" data-md-component="logo">
       
-  <img src="/assets/720x720_white.png" alt="logo">
+  <img src="../../assets/720x720_white.png" alt="logo">
 
     </a>
     CalinixOS User Guide
@@ -253,7 +258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Welcome to CalinixOS User Guide
       </a>
     </li>
@@ -267,7 +272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/introduction/" class="md-nav__link">
+      <a href="../../introduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -315,7 +320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/starters-guide/getting-started/" class="md-nav__link">
+      <a href="../../starters-guide/getting-started/" class="md-nav__link">
         Getting Started
       </a>
     </li>
@@ -329,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/starters-guide/installation/" class="md-nav__link">
+      <a href="../../starters-guide/installation/" class="md-nav__link">
         Installation Guide
       </a>
     </li>
@@ -377,7 +382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/interface/the-awesomewm/" class="md-nav__link">
+      <a href="../../interface/the-awesomewm/" class="md-nav__link">
         About the Awesome Window Manager
       </a>
     </li>
@@ -391,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/interface/wm-vs-de/" class="md-nav__link">
+      <a href="../../interface/wm-vs-de/" class="md-nav__link">
         Window Manager VS Desktop Environment
       </a>
     </li>
@@ -405,7 +410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/interface/dock/" class="md-nav__link">
+      <a href="../../interface/dock/" class="md-nav__link">
         The Dock
       </a>
     </li>
@@ -419,7 +424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/interface/control-center/" class="md-nav__link">
+      <a href="../../interface/control-center/" class="md-nav__link">
         The Control Center
       </a>
     </li>
@@ -439,12 +444,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -465,11 +472,99 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/software/virtualization/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Virtual Machines
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Virtual Machines
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-machines-vs-dual-booting-linux" class="md-nav__link">
+    Virtual Machines vs. Dual Booting Linux
+  </a>
+  
+    <nav class="md-nav" aria-label="Virtual Machines vs. Dual Booting Linux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-if-your-pc-supports-virtualization" class="md-nav__link">
+    Check if your PC supports Virtualization
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qemukvm" class="md-nav__link">
+    QEMU/KVM
+  </a>
+  
+    <nav class="md-nav" aria-label="QEMU/KVM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-required-packages" class="md-nav__link">
+    Install required packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-libvirtdservice" class="md-nav__link">
+    Enable libvirtd.service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-normal-user-to-manage-kvm" class="md-nav__link">
+    Enable Normal User to Manage KVM
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -488,12 +583,142 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-machines-vs-dual-booting-linux" class="md-nav__link">
+    Virtual Machines vs. Dual Booting Linux
+  </a>
+  
+    <nav class="md-nav" aria-label="Virtual Machines vs. Dual Booting Linux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-if-your-pc-supports-virtualization" class="md-nav__link">
+    Check if your PC supports Virtualization
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qemukvm" class="md-nav__link">
+    QEMU/KVM
+  </a>
+  
+    <nav class="md-nav" aria-label="QEMU/KVM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-required-packages" class="md-nav__link">
+    Install required packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-libvirtdservice" class="md-nav__link">
+    Enable libvirtd.service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-normal-user-to-manage-kvm" class="md-nav__link">
+    Enable Normal User to Manage KVM
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
+<a href="https://github.com/Calinix-Team/calinix-docs/edit/master/docs/software/virtualization.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
 
+
+<h1 id="virtual-machines">Virtual Machines</h1>
+<p>A virtual machine, commonly shortened to just VM, is no different than any other physical computer like a laptop, smart phone, or server. It has a CPU, memory, disks to store your files, and can connect to the internet if needed. While the parts that make up your computer (called hardware) are physical and tangible, VMs are often thought of as virtual computers or software-defined computers within physical servers, existing only as code.</p>
+<p>Put simply virtual machines---known as VMs---are applications that create a software environment that mimics computer hardware. An operating system can then be installed into this environment. We call this a "guest OS", while the operating system you have installed on your physical computer is the "host OS". Additionally, virtualization can be enhanced with the help of dedicated system hardware!</p>
+<h2 id="virtual-machines-vs-dual-booting-linux">Virtual Machines vs. Dual Booting Linux</h2>
+<p>There are two ways to run multiple operating systems on a computer:</p>
+<ul>
+<li>Dual booting</li>
+<li>Virtual machine</li>
+</ul>
+<p>Dual booting is good but has its downsides. For example, you can run two or more Linux distributions installed on your computer. However, it doesn't work well for everyone. Various issues can frustrate the experience, such as rebooting.</p>
+<p>The time taken to restart, select a different OS at the GRUB bootloader screen, and then boot, can be problematic. This is especially true on systems where Linux is installed alongside Windows.</p>
+<p>On slower systems, you could be waiting 5-10 minutes before you can start being productive. With anti-virus software scanning at boot, you're soon on a massive go-slow.</p>
+<p>However, running your secondary OS in a virtual machine can overcome this problem.</p>
+<h3 id="check-if-your-pc-supports-virtualization">Check if your PC supports Virtualization</h3>
+<p>To check if your PC supports virtualization, fire up the terminal and enter</p>
+<pre><code class="language-bash">lscpu | grep &quot;Virtualization&quot;
+</code></pre>
+<p>You should see something like AMD-V, VT-x or VT-d to confirm your PC supports virtualization.</p>
+<p>Let's see the different ways of Virtualization</p>
+<h2 id="qemukvm">QEMU/KVM</h2>
+<p>KVM is one of the most used Virtualization software in Linux World. In fact, most cloud providers use KVM as their Hypervisor of choice. Big projects including Openstack use KVM as default Virtualization tool.</p>
+<h4 id="install-required-packages">Install required packages</h4>
+<pre><code>sudo pacman -Sy qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ebtables iptables libguestfs
+</code></pre>
+<h4 id="enable-libvirtdservice">Enable libvirtd.service</h4>
+<p>Once the installation is done, start and enable <code>libvirtd</code> service to start at boot:</p>
+<pre><code class="language-bash">sudo systemctl enable libvirtd.service
+sudo systemctl start libvirtd.service
+</code></pre>
+<h4 id="enable-normal-user-to-manage-kvm">Enable Normal User to Manage KVM</h4>
+<p>Since we want to use our standard Linux user account to manage KVM, let’s configure KVM to allow this.</p>
+<p>Open the <code>file /etc/libvirt/libvirtd.conf</code> for editing.</p>
+<p>Set the UNIX domain socket group ownership to libvirt, (around line 85)</p>
+<pre><code class="language-bash">unix_sock_group = &quot;libvirt&quot;
+</code></pre>
+<p>Set the UNIX socket permissions for the R/W socket (around line 102)</p>
+<pre><code class="language-bash">unix_sock_rw_perms = &quot;0770&quot;
+</code></pre>
+<p>Add your user account to libvirt group.</p>
+<pre><code class="language-bash">sudo usermod -a -G libvirt $(whoami)
+newgrp libvirt
+sudo systemctl restart libvirtd.service
+</code></pre>
+<p>You have successfully installed KVM, QEMU and Virt Manager on Arch Linux. You are now good to go. You can install a Linux or Windows OS Virtual Machine and build your study labs.</p>
+
+              
             </article>
           </div>
         </div>
@@ -501,6 +726,26 @@
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../interface/control-center/" class="md-footer__link md-footer__link--prev" aria-label="Previous: The Control Center" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              The Control Center
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -526,10 +771,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "/", "features": ["search.suggest", "search.highlight"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "/assets/javascripts/workers/search.01824240.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.01824240.min.js"}</script>
     
     
-      <script src="/assets/javascripts/bundle.ff0eccb3.min.js"></script>
+      <script src="../../assets/javascripts/bundle.ff0eccb3.min.js"></script>
       
     
   </body>

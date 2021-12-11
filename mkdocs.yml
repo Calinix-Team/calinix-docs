@@ -21,6 +21,9 @@ nav:
       - "interface/wm-vs-de.md"
       - "interface/dock.md"
       - "interface/control-center.md"
+    
+    - Software: 
+      - "software/virtualization.md"
 
 remote_name: origin
 
