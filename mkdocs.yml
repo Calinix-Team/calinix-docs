@@ -22,8 +22,11 @@ nav:
       - "interface/dock.md"
       - "interface/control-center.md"
     
-    - Software: 
+    - Adding and Managing Software: 
+      - "software/pkgmngsys.md"
       - "software/virtualization.md"
+      - "software/usingpacman.md"
+
 
 remote_name: origin
 
