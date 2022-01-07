@@ -1,0 +1,1171 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A detailed user guide to a CalinixOS user, which takes you through the walls and cores of the OS as a user">
+      
+      
+        <meta name="author" content="Arghya Sarkar, Founder and Lead of Calinix Project">
+      
+      
+      <link rel="icon" href="../../assets/720x720_white.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.4">
+    
+    
+      
+        <title>Finding and installing Linux applications - CalinixOS User Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bb3983ee.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#finding-and-installing-linux-applications" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://wiki.calinix.tech" title="CalinixOS User Guide" class="md-header__button md-logo" aria-label="CalinixOS User Guide" data-md-component="logo">
+      
+  <img src="../../assets/720x720_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CalinixOS User Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Finding and installing Linux applications
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Calinix-Team/calinix-docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Calinix-Team/calinix-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://wiki.calinix.tech" title="CalinixOS User Guide" class="md-nav__button md-logo" aria-label="CalinixOS User Guide" data-md-component="logo">
+      
+  <img src="../../assets/720x720_white.png" alt="logo">
+
+    </a>
+    CalinixOS User Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Calinix-Team/calinix-docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Calinix-Team/calinix-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Welcome to CalinixOS User Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Starting With CalinixOS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Starting With CalinixOS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Starting With CalinixOS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../starters-guide/getting-started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../starters-guide/installation/" class="md-nav__link">
+        Installation Guide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Interface
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Interface" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Interface
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interface/the-awesomewm/" class="md-nav__link">
+        About the Awesome Window Manager
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interface/wm-vs-de/" class="md-nav__link">
+        Window Manager VS Desktop Environment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interface/dock/" class="md-nav__link">
+        The Dock
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interface/control-center/" class="md-nav__link">
+        The Control Center
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Adding and Managing Software
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Adding and Managing Software" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Adding and Managing Software
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pkgmngsys/" class="md-nav__link">
+        Package Management System
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usingpacman/" class="md-nav__link">
+        Using the Pacman package manager
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aur/" class="md-nav__link">
+        A Beginner's Guide to the Arch User Repository
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Finding and installing Linux applications
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Finding and installing Linux applications
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#package-management-in-calinixos" class="md-nav__link">
+    Package management in CalinixOS
+  </a>
+  
+    <nav class="md-nav" aria-label="Package management in CalinixOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-placement" class="md-nav__link">
+    File placement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolving-dependencies" class="md-nav__link">
+    Resolving dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating-packages" class="md-nav__link">
+    Updating packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repositories" class="md-nav__link">
+    Repositories
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-from-source-code" class="md-nav__link">
+    Installing from source code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-installation-methods" class="md-nav__link">
+    Other installation methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#searching-for-linux-software-alternatives-on-the-web" class="md-nav__link">
+    Searching for Linux software alternatives on the Web
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#browsing-and-installing-software-through-gui" class="md-nav__link">
+    Browsing and installing software through GUI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-1-install-and-remove-software-in-calinixos-with-pamac" class="md-nav__link">
+    Method 1: Install and Remove Software in CalinixOS with Pamac
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 1: Install and Remove Software in CalinixOS with Pamac">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-software-in-calinixos-with-pamac" class="md-nav__link">
+    Install Software in CalinixOS with Pamac
+  </a>
+  
+    <nav class="md-nav" aria-label="Install Software in CalinixOS with Pamac">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabling-aur-and-snapflatpak-support-in-pamac" class="md-nav__link">
+    Enabling AUR and Snap/Flatpak support in Pamac
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-software-in-calinixos-with-pamac" class="md-nav__link">
+    Remove Software in CalinixOS with Pamac
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-2-install-and-remove-software-in-calinixos-with-pacman-command" class="md-nav__link">
+    Method 2: Install and Remove Software in CalinixOS with Pacman command
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 2: Install and Remove Software in CalinixOS with Pacman command">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-software-in-calinixos-with-pacman" class="md-nav__link">
+    Install Software in CalinixOS with pacman
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-software-in-calinixos-with-pacman" class="md-nav__link">
+    Remove Software in CalinixOS with pacman
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tips-to-improve-pacman-experience" class="md-nav__link">
+    Tips to Improve Pacman Experience
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-4-install-and-remove-software-in-calinixos-with-yay" class="md-nav__link">
+    Method 4: Install and Remove Software in CalinixOS with yay
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 4: Install and Remove Software in CalinixOS with yay">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-software-in-calinixos-with-yay" class="md-nav__link">
+    Install Software in CalinixOS with yay
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-software-in-calinixos-with-yay" class="md-nav__link">
+    Remove Software in CalinixOS with yay
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fonts/" class="md-nav__link">
+        Adding new fonts in CalinixOS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../virtualization/" class="md-nav__link">
+        Virtual Machines
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#package-management-in-calinixos" class="md-nav__link">
+    Package management in CalinixOS
+  </a>
+  
+    <nav class="md-nav" aria-label="Package management in CalinixOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-placement" class="md-nav__link">
+    File placement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolving-dependencies" class="md-nav__link">
+    Resolving dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating-packages" class="md-nav__link">
+    Updating packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repositories" class="md-nav__link">
+    Repositories
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-from-source-code" class="md-nav__link">
+    Installing from source code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-installation-methods" class="md-nav__link">
+    Other installation methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#searching-for-linux-software-alternatives-on-the-web" class="md-nav__link">
+    Searching for Linux software alternatives on the Web
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#browsing-and-installing-software-through-gui" class="md-nav__link">
+    Browsing and installing software through GUI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-1-install-and-remove-software-in-calinixos-with-pamac" class="md-nav__link">
+    Method 1: Install and Remove Software in CalinixOS with Pamac
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 1: Install and Remove Software in CalinixOS with Pamac">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-software-in-calinixos-with-pamac" class="md-nav__link">
+    Install Software in CalinixOS with Pamac
+  </a>
+  
+    <nav class="md-nav" aria-label="Install Software in CalinixOS with Pamac">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabling-aur-and-snapflatpak-support-in-pamac" class="md-nav__link">
+    Enabling AUR and Snap/Flatpak support in Pamac
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-software-in-calinixos-with-pamac" class="md-nav__link">
+    Remove Software in CalinixOS with Pamac
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-2-install-and-remove-software-in-calinixos-with-pacman-command" class="md-nav__link">
+    Method 2: Install and Remove Software in CalinixOS with Pacman command
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 2: Install and Remove Software in CalinixOS with Pacman command">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-software-in-calinixos-with-pacman" class="md-nav__link">
+    Install Software in CalinixOS with pacman
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-software-in-calinixos-with-pacman" class="md-nav__link">
+    Remove Software in CalinixOS with pacman
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tips-to-improve-pacman-experience" class="md-nav__link">
+    Tips to Improve Pacman Experience
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-4-install-and-remove-software-in-calinixos-with-yay" class="md-nav__link">
+    Method 4: Install and Remove Software in CalinixOS with yay
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 4: Install and Remove Software in CalinixOS with yay">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-software-in-calinixos-with-yay" class="md-nav__link">
+    Install Software in CalinixOS with yay
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-software-in-calinixos-with-yay" class="md-nav__link">
+    Remove Software in CalinixOS with yay
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/Calinix-Team/calinix-docs/edit/master/docs/software/installm.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+<h1 id="finding-and-installing-linux-applications">Finding and installing Linux applications</h1>
+<p>Many powerful software applications are available on the Linux operating system. You can find alternatives to most of the popular applications used on other systems.</p>
+<p>You can use the CalinixOS package management system to install applications. Most essential applications are available from the repositories provided by chaotic-aur, arcolinux, arch linux and Calinix project. You can enable other repositories to get additional applications.</p>
+<h2 id="package-management-in-calinixos">Package management in CalinixOS</h2>
+<p>Like most modern Linux distributions, CalinixOS uses a <em>package management</em> system. Package management tools automate installation, upgrading, and removing of software applications and components.</p>
+<p>Each application or component is defined as a <em>package</em>. When the package is installed, all code, configuration, and other files are deployed on the system.</p>
+<p>A single package is not necessarily the same as an application. Some applications can be shipped as several packages. Moreover, shared code (libraries) in Linux is normally shipped as separate packages, while in other systems applications often ship their own versions of required libraries and install them if necessary.</p>
+<h3 id="file-placement">File placement</h3>
+<p>The package management tools track which files on your CalinixOS installation belong to each package; normally, every file that is installed in the <code>/usr</code> tree as well as most configuration files under <code>/etc</code> are installed by one of the packages. When installing a package, the package management system verifies its integrity; if any files are missing or corrupted, the package is not installed.</p>
+<h3 id="resolving-dependencies">Resolving dependencies</h3>
+<p>The package management system also tracks all <em>dependencies</em> between the packages. For example, if an application requires some libraries, the package for this application lists the libraries as dependencies. When you install the application package, the package management tools automatically install the library packages. If a dependency is not available, the tools do not install the package, so you can avoid a sudden malfunction.</p>
+<p>When you want to remove a package, package management tools cleanly delete all code files for this package without affecting other packages. By default, configuration files are not removed, so you can install the package again and keep the configuration that you have set up earlier.</p>
+<h3 id="updating-packages">Updating packages</h3>
+<p>Updating any package is entirely automatic with the package management system. The system replaces all the necessary code files and preserves existing configuration.</p>
+<p>In fact, for most Linux distributions, including CalinixOS, all of the system installation except the earliest part is performed by installing various packages. Security updates and upgrades to a next release are performed entirely by package management tools.</p>
+<h3 id="repositories">Repositories</h3>
+<p>To get packages, Pacman uses <em>repositories</em>. A repository is an organized collection of packages. Repositories can be kept on any data media; notably, the CalinixOS installation image contains a repository. However, most up-to-date repositories are normally maintained online.</p>
+<p>Each CalinixOS release has an official <em>calinix</em> repository and few other repositories like the chaotic-aur repository (which contains pre-built packages from the Arch User Repository), ArcoLinux 3rd party and ArcoLinux X-Large repositories (which again contain a large number of software outside the official Arch Linux repositories and are maintained regularly). And ofcourse the Arch Linux Repositories which make Calinix very close to actual Arch Linux when it comes to software release scheme. In these repositories, you can find almost any Linux software. </p>
+<h3 id="installing-from-source-code">Installing from source code</h3>
+<p>While many Linux applications can be built and installed from from source code, using such builds can make your system much harder to manage. For example, automatic updates to system packages (especially when updating to the next release) might impact an application that was installed from source. And, of course, no automatic security updates are available for the application.</p>
+<p>So we do not recommend building software from source code if you are not in for the hassle. You will find many software in the repositories and almost any software in the <strong>AUR</strong>, <strong>Flatpak</strong> or <strong>Snap</strong>.</p>
+<h3 id="other-installation-methods">Other installation methods</h3>
+<p>Sometimes you might need to install software using other package management systems. Notably:</p>
+<ul>
+<li><a href="https://www.cpan.org/">CPAN</a> for libraries for the Perl language</li>
+<li><a href="https://pypi.python.org/pypi">PyPI</a> for libraries (and sometimes applications) for the Python language</li>
+<li>Commercial repositories for games</li>
+<li><a href="https://go.dev">Go</a> for Golang-written applications</li>
+</ul>
+<p>However, installing applications using the CalinixOS package management systems is the preferred option.</p>
+<h2 id="searching-for-linux-software-alternatives-on-the-web">Searching for Linux software alternatives on the Web</h2>
+<p>To complete your tasks on a Linux system, you need to find the software applications that fit your needs. If you are switching from another operating system, you might need to find replacements for the software that you used before.</p>
+<p>Most applications available on Linux are open-source software. You can use open-source software without acquiring any licenses. Moreover, widespread open-source software is usually available in the official CalinixOS repository, so you can install it easily.</p>
+<p>Procedure</p>
+<p>Access the following websites to review Linux alternatives to popular software packages:</p>
+<ul>
+<li>https://linuxappfinder.com/alternatives</li>
+<li>https://www.linuxalt.com/</li>
+<li>https://opensource.com/alternatives</li>
+<li>https://www.osalt.com/</li>
+<li>https://alternativeto.net/</li>
+</ul>
+<h2 id="browsing-and-installing-software-through-gui">Browsing and installing software through GUI</h2>
+<p>Since CalinixOS is based on <a href="https://www.archlinux.org/">Arch Linux</a>, most of this tutorial can also be used for Arch Linux and its derivatives. The methods will be listed from easiest to more advanced.</p>
+<ul>
+<li>Using the Pamac graphical software manager tool</li>
+<li>Using pacman GUI front-end Octopi</li>
+<li>Using pacman commands</li>
+<li>Using yay AUR helper to install software from <a href="https://itsfoss.com/aur-arch-linux/">Arch User Repository</a></li>
+</ul>
+<p>I am also adding several tricks to make things easier.</p>
+<h2 id="method-1-install-and-remove-software-in-calinixos-with-pamac">Method 1: Install and Remove Software in CalinixOS with Pamac</h2>
+<p>Here, we’ll be using Pamac to install/remove software in Calinix.</p>
+<h3 id="install-software-in-calinixos-with-pamac">Install Software in CalinixOS with Pamac</h3>
+<p><a href="../usingpacman/">Pacman</a> is the package manager created by the Arch team and used by Calinix. This is probably the easiest way to install the software. We will cover it in depth later on. Right now, we focus on Pamac.</p>
+<p><a href="https://github.com/manjaro/pamac">Pamac</a> is a graphical application created to make Pacman easy to use. Like synaptic for apt.</p>
+<p><img alt="Pamac|800x534" src="1.png" /></p>
+<p>You can either access Pamac by launching “<strong>Add/Remove Software</strong>” from the app menu (Launched by Super+R)</p>
+<p>You can also launch the Software Manager</p>
+<p>Pamac allows you to view software already installed, search for new software by name or by category. If you don’t find something you search for, you can also look for it in the <a href="https://aur.archlinux.org/">Arch User Repository (AUR)</a>.</p>
+<p><img alt="Pamac Install And Remove" src="https://i1.wp.com/itsfoss.com/wp-content/uploads/2020/05/Pamac-install-and-remove.png?fit=800%2C522&amp;ssl=1" /></p>
+<p>Your application will not be installed until you click “<strong>Apply</strong>”. You will be prompted to enter your password and after showing you a list of files it will download it will go to work.</p>
+<p>It’s optional to click the “<strong>right arrow</strong>” next to the “<strong>Apply</strong>” button to see the terminal output.</p>
+<h4 id="enabling-aur-and-snapflatpak-support-in-pamac">Enabling AUR and Snap/Flatpak support in Pamac</h4>
+<p>Enabling the AUR and Snap or Flatpak support takes a couple of extra steps in Pamac. Click the 3 dotted menu in the upper right corner and select “Preferences”. You will be prompted to enter your password.</p>
+<p><img alt="Pamac Menu" src="https://i2.wp.com/itsfoss.com/wp-content/uploads/2020/05/Pamac-menu.png?fit=800%2C384&amp;ssl=1" /></p>
+<p>Now, select the “AUR” tab. Now flip the switch (toggle it on). Now, you will be able to install software from the AUR and keep them up-to-date.</p>
+<p><img alt="Aur Repository|800x487" src="https://i0.wp.com/itsfoss.com/wp-content/uploads/2020/05/aur-repository.jpg?resize=800%2C487&amp;ssl=1" /></p>
+<p>Similarly, you can just head to the Snap and Flatpak options to “<strong>Enable Snap support</strong>” and “<strong>Enable Flatpak support</strong>” if you need.</p>
+<h3 id="remove-software-in-calinixos-with-pamac">Remove Software in CalinixOS with Pamac</h3>
+<p>Removing software using Pamac is as easy as installing it. All you have to do just click on the “remove” button on the right side of the screen. Once you selected all the packages you want to remove, click on “apply” button.</p>
+<h2 id="method-2-install-and-remove-software-in-calinixos-with-pacman-command">Method 2: Install and Remove Software in CalinixOS with Pacman command</h2>
+<p>Graphical applications are easy to use for beginners, but terminal or command line programs are more powerful and faster.</p>
+<h3 id="install-software-in-calinixos-with-pacman">Install Software in CalinixOS with pacman</h3>
+<p>As I stated above, Pacman is the command line package manager for Arch based distros. To install an application, all you have to do is enter <code>sudo pacman -S PACKAGENAME</code>. Just replace PACKAGENAME with the name of the application that you want to install.</p>
+<p>You will be prompted to enter your password. Once you enter it, your application will be downloaded and installed.</p>
+<p><img alt="Pacman Installation" src="https://i0.wp.com/itsfoss.com/wp-content/uploads/2020/05/Pacman-installation.png?fit=800%2C591&amp;ssl=1" /></p>
+<p>Pacman Installation</p>
+<p>You can also install a group of packages such a GNOME using this command:</p>
+<pre><code>sudo pacman -S gnome
+</code></pre>
+<p>It’s that easy!</p>
+<h3 id="remove-software-in-calinixos-with-pacman">Remove Software in CalinixOS with pacman</h3>
+<p>Removing software with Pacman is just as easy. All you have to do is enter the following command:</p>
+<pre><code>sudo pacman -R PACKAGENAME
+</code></pre>
+<p>Just replace PACKAGENAME with the name of the package you want to remove.</p>
+<p><img alt="Pacman Uninstallation" src="https://i1.wp.com/itsfoss.com/wp-content/uploads/2020/05/Pacman-uninstallation.png?fit=800%2C457&amp;ssl=1" /></p>
+<p>Pacman Uninstallation</p>
+<h3 id="tips-to-improve-pacman-experience">Tips to Improve Pacman Experience</h3>
+<p>Since it’s a terminal application, Pacman can run pretty quickly, Unfortunately, the process can be slowed down by a bad <a href="https://en.wikipedia.org/wiki/Mirror_site">mirror</a>.</p>
+<p>You can use this command to rank mirrors by speed and remove out of date mirrors:</p>
+<pre><code>pacman-mirrors -g
+</code></pre>
+<p>When that is finished you will need to sync the Pacman database with this command:</p>
+<pre><code>sudo pacman -Syy
+</code></pre>
+<p>You may learn more about <a href="https://itsfoss.com/pacman-command/">using pacman command for package management in Arch-based distributions</a> in our detailed guide.</p>
+<h2 id="method-4-install-and-remove-software-in-calinixos-with-yay">Method 4: Install and Remove Software in CalinixOS with yay</h2>
+<p>While you can’t install an application from the <a href="https://itsfoss.com/aur-arch-linux/">AUR</a> using Pacman, there are a number of terminal programs that allow you to do just that. One of the most well-known examples is <a href="https://github.com/Jguer/yay">yay</a>.</p>
+<h3 id="install-software-in-calinixos-with-yay">Install Software in CalinixOS with yay</h3>
+<p>You can install packages from both official repository and AUR. You first need to install yay on your machine. To do this, type in the commands below:</p>
+<pre><code>git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+</code></pre>
+<p>One nice thing about yay is that it gives you the ability to search for the application you want to install, all you have to do is use this command:</p>
+<pre><code>yay -S PACKAGENAME
+</code></pre>
+<p>Don’t forget to replace PACKAGENAME with the name of the application you are looking for.</p>
+<p><img alt="Yay Installation" src="https://i0.wp.com/itsfoss.com/wp-content/uploads/2020/05/yay-installation.png?fit=800%2C558&amp;ssl=1" /></p>
+<p>Yay Installation</p>
+<p>You will be prompted to enter “y” to continue. You will be prompted to enter your password and asked a couple more questions verifying that you want to install this application.</p>
+<p>Depending on how large the file is and how much work “yay” has to do to prepare the file, the install may be finished quickly or take a while to complete.</p>
+<h3 id="remove-software-in-calinixos-with-yay">Remove Software in CalinixOS with yay</h3>
+<p>To remove an AUR application with yay, just use the following command:</p>
+<pre><code>yay -R PACKAGENAME
+</code></pre>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../aur/" class="md-footer__link md-footer__link--prev" aria-label="Previous: A Beginner&#39;s Guide to the Arch User Repository" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              A Beginner's Guide to the Arch User Repository
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../fonts/" class="md-footer__link md-footer__link--next" aria-label="Next: Adding new fonts in CalinixOS" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Adding new fonts in CalinixOS
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © The Calinix Project 2021
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.361d90f1.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.289a2a4b.min.js"></script>
+      
+    
+  </body>
+</html>
