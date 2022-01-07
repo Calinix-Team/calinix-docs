@@ -24,8 +24,10 @@ nav:
     
     - Adding and Managing Software: 
       - "software/pkgmngsys.md"
-      - "software/virtualization.md"
       - "software/usingpacman.md"
+      - "software/aur.md"
+      - "software/installm.md"
+      - "software/virtualization.md"
 
 
 remote_name: origin
