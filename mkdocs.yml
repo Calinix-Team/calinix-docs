@@ -27,7 +27,9 @@ nav:
       - "software/usingpacman.md"
       - "software/aur.md"
       - "software/installm.md"
+      - "software/fonts.md"
       - "software/virtualization.md"
+
 
 
 remote_name: origin
